@@ -1,0 +1,181 @@
+/**
+	Theme Name:		Sine Charity
+	Theme URI:		https://risethemes.com/product-downloads/sine-charity
+	Description:	Sine Charity is a fully responsive, beautiful & elegant child theme of popular Gutenberg friendly - Sine. Powerful and flexible WordPress theme that comes with 10+ unique and stunning home demos, suitable for all your idea and different types of Non-profit Organizations, nonprofits, Charity, Fundraise camps, Foundations, Fundraising events, church, medical research, wildlife animal care, Welfare activities, etc. With many highly customizable features, you can easily crate a professional site that impresses. This theme supports most of the popular plugins such as, Rise Blocks, Elementor, RT Easy builder, Contact Form 7, Jetpack, PS Sitemap, Woocommerce, Yoast SEO, etc. For live demo: https://preview.risethemes.com/sites/sine-charity/ Support queries: https://risethemes.com/theme-setup/
+	Author:			Rise Themes
+	Author URI: 	http://risethemes.com/
+    Template:		sine
+	Version:		1.0
+    Tested up to:   5.8
+    Requires PHP:   5.6
+	License:		GNU General Public License v2 or later
+	License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+	Tags:			left-sidebar, right-sidebar, wide-blocks, block-styles, grid-layout, two-columns, flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, threaded-comments, translation-ready, news, education, entertainment
+	Text Domain:	sine-charity
+*/
+.header-3 .sine-header-top {
+	position: relative;
+	padding: 20px 15px;
+}
+
+.sine-bottom-header-wrapper.header-3 .site-branding:after {
+	position: absolute;
+    content: '';
+    left: -42%;
+    top: 0px;
+    bottom: 0px;
+    width: 77%;
+    background-color: #f3501d;
+}
+
+.sine-bottom-header-wrapper.header-3 .site-branding > * {
+	position: relative;
+	z-index: 99;
+}
+
+.sine-bottom-header-wrapper.header-3 .site-branding .site-title a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.sine-bottom-header-wrapper.header-3 .site-branding .site-description {
+    color: #cfcfcf;
+}
+
+
+.sine-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sine-contact-info-inner-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.sine-contact-info-inner span {
+    display: block;
+    width: 100%;
+}
+
+.sine-contact-info-inner-wrapper > i {
+    font-size: 32px;
+    color: #f3501d;
+    margin-left: 25px;
+    border-right: 1px dashed #000;
+    padding-right: 15px;
+}
+
+.sine-contact-info-inner {
+    margin-left: 15px;
+}
+
+.sine-contact-info-inner span:first-child {
+	color: #555555;
+    font-size: 12px;
+}
+
+.sine-contact-info-inner span:last-child {
+	color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sine-social-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sine-social-menu ul li {
+	display: flex;
+	align-items: center;
+}
+
+.header-3 .sine-main-menu > ul > li, 
+.header-3 .sine-main-menu div > ul > li {
+    padding: 1.3rem 0;
+}
+
+.header-3 .sine-header-bottom-wrapper {
+    background: #000;
+}
+
+.header-3 .sine-main-menu > ul > li > a, 
+.header-3 .sine-search-icons, 
+.header-3 .sine-search-icons:visited {
+    color: #ffffff;
+}
+
+.sine-bottom-header-wrapper.header-3 {
+    padding: 0;
+}
+
+.sine-footer-menu-wrapper ul {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 10px;
+    list-style: none;
+    border-top: 1px solid #505050;
+}
+.sine-footer-menu-wrapper ul li {
+    margin: 0 15px;
+}
+
+.sine-footer-menu-wrapper ul li a {
+    color: #ccc;
+}
+
+.header-3  .menu-toggler span {
+	background: #fff;
+}
+
+@media (max-width: 767px) {
+	.header-3 .sine-header-bottom {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.sine-bottom-header-wrapper.header-3 .site-branding:after {		
+		left: 0;		
+		width: 100%;
+	}
+
+	.header-3 .sine-header-top {
+		overflow: hidden;
+	}
+
+	.header-3  .sine-social-menu {
+		flex: 0 0 70%;
+	}
+
+	.header-3  .sine-bottom-header-wrapper .menu-toggler {
+		flex: 21%;
+	}
+
+	.header-3 .menu-toggler span {
+		width: 40px;
+	}
+}
+
+.sine-social-menu.sine-fixed-social-menu {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    z-index: 999;
+    transform: rotate( 
+90deg);
+    transform-origin: center;
+    opacity: 1;
+    display: none;
+}
+
+.sine-social-menu.sine-fixed-social-menu ul li a:before {
+    transform: rotate(
+-90deg);
+}
